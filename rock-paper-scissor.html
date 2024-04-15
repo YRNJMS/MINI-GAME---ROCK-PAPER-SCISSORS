@@ -546,7 +546,7 @@
   <div class="pageTitle">
     <div class="text">ROCK PAPER SCISSORS</div>
   </div>e
-<!-- DECIBEL COUNTER -->
+<!-- MAIN PAGE MINI GAME -->
 <div class="profile-info">
     <div class="profile1">
         <section class="mainprofile" style="  background: linear-gradient(to left, #272935, #272935, #ffffff1c), url(assets/profile/raiden.webp); background-size: 100%; background-repeat: no-repeat; background-attachment: fixed; padding: 30px;">
@@ -607,7 +607,6 @@
                 <button class="buttonReset" onclick="resetGame()">Reset Game</button>
             </div>
     </section>
-
 <!-- footer -->
 <footer class="footer" style="position: relative; top: 100px;z-index: -10;">
     <div class="FooterContainer" style="    position: relative;background: #111;height: auto;font-family: 'Times New Roman', Times, serif;padding-top: 30px;color: #fff;background: url(assets/img/1920x1440-stars-galaxy-4k_1540140131.jpg), #212529;background-size: cover;background-attachment: fixed;">
@@ -642,7 +641,7 @@
         }
 
         function selectMove(move, playerNumber) {
-            // Call getPlayerNames to ensure names are set before using them
+            // call ng playerName para sa pag start ng game naka display na
             getPlayerNames();
             if (playerNumber === 1) {
                 player1Move = move;
@@ -674,7 +673,7 @@
             document.getElementById('player1Score').innerText = player1Score;
             document.getElementById('player2Score').innerText = player2Score;
 
-            // Update scores and display winner for full game
+            // basta sa scores
             if (player1Score >= 5) {
                 document.getElementById('result').innerText = player1Name + " wins the game with a score of 5! Please reset the match...";
                 player1Move = '';
@@ -700,7 +699,7 @@
             document.getElementById('player2Score').innerText = player2Score;
         }
 
-        // Call getPlayerNames on page load to ensure names are available
+        // pang call ng name
         getPlayerNames();
 </script>
 
